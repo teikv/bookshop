@@ -12,3 +12,6 @@ Route::get('/bookdetail', function () {
     return view('bookdetail');
 });
 
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'homepage']);

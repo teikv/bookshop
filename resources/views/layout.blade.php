@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Book List')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- slick carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <style>
         .sidebar {
             border-right: 1px solid #ccc;
         }
+
         .book-card {
             transition: transform 0.2s;
         }
+
         .book-card:hover {
             transform: scale(1.03);
+        }
+        .carousel-item {
+            height: 300px; /* Chiều cao của banner */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-caption h5 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Điều chỉnh container */
+        .popular-books,
+        .new-books {
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Điều chỉnh từng card */
+        .card {
+            width: 300px;
+            margin: 0 10px;
+            border: none;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
     </style>
     @stack('styles')
 </head>
+
 <body>
     <!-- Header -->
     <header class="bg-light py-3">
@@ -82,4 +122,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @stack('scripts')
 </body>
+
 </html>
