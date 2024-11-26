@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- slick carousel -->
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" rel="stylesheet">
@@ -71,10 +71,10 @@
             <!-- Navigation -->
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ url('/') }}" class="nav-link text-dark">Homepage</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-dark">Sách</a></li>
+                    <li class="nav-item"><a href="{{ url('/homepage') }}" class="nav-link text-dark">Homepage</a></li>
+                    <li class="nav-item"><a href="{{ url('/booklist') }}" class="nav-link text-dark">Sách</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="{{ url('/booklist') }}" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
                             Thể loại
                         </a>
                         <ul class="dropdown-menu">
@@ -83,7 +83,7 @@
                             <li><a class="dropdown-item" href="#">Kinh doanh</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link text-dark">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link text-dark">Về chúng tôi</a></li>
                 </ul>
             </nav>
 
