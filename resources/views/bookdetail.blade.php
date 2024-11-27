@@ -41,7 +41,7 @@
         <p class="text-muted">Còn lại 50 trong kho</p>
         <div class="d-flex">
           <button class="btn btn-outline-secondary me-3">Thêm vào giỏ hàng</button>
-          <button class="btn btn-primary">Mua ngay</button>
+          <button class="btn btn-primary" onclick="window.location.href='{{ url('/payment') }}'">Mua ngay</button>
         </div>
       </div>
     </div>
