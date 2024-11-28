@@ -7,9 +7,9 @@
   <div class="container my-3">
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ url('/homepage') }}">Trang chủ</a></li>
-        <li class="breadcrumb-item"><a href="{{ url('/booklist') }}">Sách</a></li>
-        <li class="breadcrumb-item active">Thông tin chi tiết</li>
+        <li class="breadcrumb-item"><a href="{{ url('/homepage') }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ url('/booklist') }}">Book</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Detail</li>
       </ol>
     </nav>
   </div>

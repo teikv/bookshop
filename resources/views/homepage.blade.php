@@ -3,6 +3,13 @@
 @section('title', 'Homepage')
 
 @section('content')
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="container mt-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+
 <!-- Carousel Banner -->
 <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -14,6 +21,7 @@
             </div>
         @endforeach
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -24,10 +32,10 @@
     </button>
 </div>
 
-
+ 
 <!-- Section: Sách bán chạy -->
 <div class="container my-5">
-    <h2 class="section-title">Sách bán chạy - Sách được yêu thích</h2>
+    <h2 class="section-title">Popular Books - Favorite Books</h2>
     <div class="popular-books">
         @foreach($popularBooks as $book)
             <div class="card">
@@ -43,7 +51,7 @@
 
 <!-- Section: Sách mới và xu hướng -->
 <div class="container my-5">
-    <h2 class="section-title">Sách mới và xu hướng</h2>
+    <h2 class="section-title">New Books - Trending Books</h2>
     <div class="new-books">
         @foreach($newBooks as $book)
             <div class="card">
