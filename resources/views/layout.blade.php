@@ -78,24 +78,24 @@
             <nav>
                 <ul class="nav">
                     <li class="nav-item"><a href="{{ url('/') }}" class="nav-link text-dark">Homepage</a></li>
-                    <li class="nav-item"><a href="{{ url('/booklist') }}" class="nav-link text-dark">Sách</a></li>
+                    <li class="nav-item"><a href="{{ url('/booklist') }}" class="nav-link text-dark">Book</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="{{ url('/booklist') }}" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
-                            Thể loại
+                            Category
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Văn học</a></li>
-                            <li><a class="dropdown-item" href="#">Khoa học</a></li>
-                            <li><a class="dropdown-item" href="#">Kinh doanh</a></li>
+                            <li><a class="dropdown-item" href="#">Literature</a></li>
+                            <li><a class="dropdown-item" href="#">Science</a></li>
+                            <li><a class="dropdown-item" href="#">Business</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link text-dark">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link text-dark">About Us</a></li>
                 </ul>
             </nav>
 
             <!-- Search and Cart -->
             <div class="d-flex align-items-center">
-                <input type="text" class="form-control me-2" placeholder="Tìm kiếm...">
+                <input type="text" class="form-control me-2" placeholder="Search...">
                 <a href="#" class="btn btn-outline-secondary">
                     <i class="bi bi-cart"></i>
                 </a>
