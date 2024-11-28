@@ -37,6 +37,11 @@
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
+        .banner-item {
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
 
         /* Điều chỉnh container */
         .popular-books,
@@ -55,6 +60,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
     </style>
     @stack('styles')
 </head>
@@ -71,7 +77,7 @@
             <!-- Navigation -->
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a href="{{ url('/homepage') }}" class="nav-link text-dark">Homepage</a></li>
+                    <li class="nav-item"><a href="{{ url('/') }}" class="nav-link text-dark">Homepage</a></li>
                     <li class="nav-item"><a href="{{ url('/booklist') }}" class="nav-link text-dark">Sách</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="{{ url('/booklist') }}" id="categoryDropdown" role="button" data-bs-toggle="dropdown">

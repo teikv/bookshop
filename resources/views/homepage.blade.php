@@ -7,7 +7,7 @@
 <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         @foreach($banners as $index => $banner)
-            <div class="carousel-item {{ $index == 0 ? 'active' : '' }}" style="background-image: url('{{ $banner['image'] }}'); background-size: cover; background-position: center; height: 300px;">
+            <div class="carousel-item {{ $index == 0 ? 'active' : '' }} banner-item" style="background-image: url('{{ $banner['image'] }}');">
                 <div class="carousel-caption">
                     <h5>{{ $banner['caption'] }}</h5>
                 </div>
