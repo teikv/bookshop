@@ -10,61 +10,25 @@
     </ol>
 </nav>
 
-<!-- Carousel Banner -->
-<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        @foreach($banners as $index => $banner)
-            <div class="carousel-item {{ $index == 0 ? 'active' : '' }} banner-item" style="background-image: url('{{ $banner['image'] }}');">
-                <div class="carousel-caption">
-                    <h5>{{ $banner['caption'] }}</h5>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
- 
-<!-- Section: Sách bán chạy -->
-<div class="container my-5">
-    <h2 class="section-title">Popular Books - Favorite Books</h2>
-    <div class="popular-books">
-        @foreach($popularBooks as $book)
+<div class="container">
+    <h1>Featured Books</h1>
+    <div class="row">
+        @foreach($books as $book)
+        <div class="col-md-3">
             <div class="card">
-                <img src="{{ $book['image'] }}" class="card-img-top" alt="{{ $book['title'] }}">
+                <img src="/images/{{ $book->image }}" class="card-img-top" alt="{{ $book->title }}">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $book['title'] }}</h5>
-                    <p class="card-text">{{ $book['description'] }}</p>
+                    <h5 class="card-title">{{ $book->title }}</h5>
+                    <p class="card-text">{{ number_format($book->price) }} VND</p>
+                    <a href="{{ route('bookdetail', $book->slug) }}" class="btn btn-primary">View Details</a>
                 </div>
             </div>
-        @endforeach
-    </div>
-</div>
-
-<!-- Section: Sách mới và xu hướng -->
-<div class="container my-5">
-    <h2 class="section-title">New Books - Trending Books</h2>
-    <div class="new-books">
-        @foreach($newBooks as $book)
-            <div class="card">
-                <img src="{{ $book['image'] }}" class="card-img-top" alt="{{ $book['title'] }}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $book['title'] }}</h5>
-                    <p class="card-text">{{ $book['description'] }}</p>
-                </div>
-            </div>
+        </div>
         @endforeach
     </div>
 </div>
 @endsection
+
 
 @section('scripts')
 <script>

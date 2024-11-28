@@ -76,4 +76,24 @@
         </nav>
     </div>
 </div>
+<div class="container">
+    <h1>All Books</h1>
+    <div class="row">
+        @foreach($books as $book)
+        <div class="col-md-3">
+            <div class="card">
+                <img src="/images/{{ $book->image }}" class="card-img-top" alt="{{ $book->title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $book->title }}</h5>
+                    <p class="card-text">{{ number_format($book->price) }} VND</p>
+                    <a href="{{ route('bookdetail', $book->slug) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+    <div class="d-flex justify-content-center">
+        {{ $books->links() }}
+    </div>
+</div>
 @endsection

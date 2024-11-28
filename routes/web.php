@@ -19,3 +19,10 @@ Route::get('/about', function () {
 use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'homepage']);
+
+
+use App\Http\Controllers\BookController;
+
+Route::get('/', [BookController::class, 'homepage'])->name('homepage');
+Route::get('/books', [BookController::class, 'booklist'])->name('booklist');
+Route::get('/book/{slug}', [BookController::class, 'bookdetail'])->name('bookdetail');
