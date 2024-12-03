@@ -3,14 +3,23 @@
 @section('title', 'Book List')
 
 @section('content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    @vite('resources/css/app.css')
+    @stack('styles')
+</head>
+
 <nav>
-    <ol class="breadcrumb">
+    <ol class="breadcrumb mt-600">
         <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Book</li>
     </ol>
 </nav>
 
-<div class="row">
+<div class="row h-full">
     <!-- Sidebar -->
     <div class="col-md-3 sidebar">
         <h5>Giá</h5>
@@ -76,4 +85,5 @@
         </nav>
     </div>
 </div>
+</html>
 @endsection

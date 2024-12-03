@@ -67,20 +67,19 @@
 
 <body>
     <!-- Header -->
-    <!-- Header -->
     <header>
         <nav
             class="bg-white flex flex-row justify-between items-center px-6 py-3 fixed top-0 left-0 right-0 z-50 shadow-md">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-                <a href="{{ url('/') }}" class="text-3xl font-bold">
+                <a href="{{ url('/') }}"  class="text-3xl font-bold">
                     <img src="{{ asset('resource/logo2.jpg') }}" alt="Logo" class="h-14 w-14">
                 </a>
             </div>
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="{{ url('/') }}" class="text-gray-700 hover:text-green-500 transition-all duration-300">Home</a>
-                <a href="{{ url('/new_booklist') }}" class="text-gray-700 hover:text-green-500 transition-all duration-300">Books</a>
+                <a href="{{ url('/') }}"  class="text-gray-700 hover:text-green-500 transition-all duration-300">Home</a>
+                <a href="{{ url('/booklist') }}" class="text-gray-700 hover:text-green-500 transition-all duration-300">Books</a>
                 <div class="relative group">
                     <!-- Dropdown Trigger -->
                     <button class="flex items-center space-x-1 text-gray-700 hover:text-green-500 transition-all">
@@ -98,7 +97,7 @@
                     </div>
                 </div>
                 <a href="#authors" id="scrollToAuthors" class="text-gray-700 hover:text-green-500 transition-all">Author</a>
-                <a href="{{ url('/aboutUs') }}" class="text-gray-700 hover:text-green-500 transition-all">About Us</a>
+                <a href="{{ url('/about') }}" class="text-gray-700 hover:text-green-500 transition-all">About Us</a>
             </div>
             <!-- Search & Cart -->
             <div class="flex items-center space-x-4">
@@ -130,7 +129,7 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg mt-2">
-            <a href="{{ url('/') }}" class="block px-4 py-2 text-gray-700 hover:text-green-500">Home</a>
+            <a href="{{ url('/') }}"  class="block px-4 py-2 text-gray-700 hover:text-green-500">Home</a>
             <a href="{{ url('/new_booklist') }}" class="block px-4 py-2 text-gray-700 hover:text-green-500">Books</a>
             <button id="mobileDropdownBtn"
                 class="w-full flex justify-between items-center px-4 py-2 text-gray-700 hover:text-green-500">
@@ -150,7 +149,7 @@
     </header>
 
     <!-- Content -->
-    <div class="container py-5">
+    <div class="container py-40">
         @yield('content')
     </div>
 
