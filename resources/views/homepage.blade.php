@@ -28,7 +28,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="css/menu.css">
     @vite('resources/css/app.css')
     @stack('styles')
 
