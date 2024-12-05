@@ -3,12 +3,22 @@
 @section('title', 'About Us') <!-- Đặt tiêu đề trang -->
 
 @section('content')
-<nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    @vite('resources/css/app.css')
+    @stack('styles')
+</head>
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ url('/') }}">Homepage</a></li>
-        <li class="breadcrumb-item"><a href="{{ url('/about') }}">About Us</a></li>
+        <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">About Us</li>
     </ol>
 </nav>
+
 <!-- Hero Section -->
 <div class="bg-light mb-4" style="height: 300px;"></div>
 
@@ -47,4 +57,6 @@
         <div class="bg-secondary" style="height: 200px;"></div>
     </div>
 </div>
+
+</html>
 @endsection
