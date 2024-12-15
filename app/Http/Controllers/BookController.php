@@ -19,9 +19,8 @@ class BookController extends Controller
         return view('booklist', compact('books'));
     }
 
-    public function bookdetail($slug)
+    public function bookdetail(Book $book)
     {
-        $book = Book::where('slug', $slug)->firstOrFail();
         return view('bookdetail', compact('book'));
     }
 }

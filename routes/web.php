@@ -25,4 +25,4 @@ use App\Http\Controllers\BookController;
 
 Route::get('/', [BookController::class, 'homepage'])->name('homepage');
 Route::get('/books', [BookController::class, 'booklist'])->name('booklist');
-Route::get('/book/{slug}', [BookController::class, 'bookdetail'])->name('bookdetail');
+Route::get('/book/{book:slug}', [BookController::class, 'bookdetail'])->name('bookdetail');

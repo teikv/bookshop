@@ -71,6 +71,30 @@ class BooksTableSeeder extends Seeder
                 'country' => 'Singapore',
                 'description' => 'Description for Book 7',
                 'slug' => Str::slug('Book 7'). '-' . uniqid(),
+            ],
+            [
+                'title' => 'Book 8',
+                'image' => 'rec-8.jpg',
+                'price' => 350000,
+                'country' => 'Malaysia',
+                'description' => 'Description for Book 8',
+                'slug' => Str::slug('Book 8'). '-' . uniqid(),
+            ],
+            [
+                'title' => 'Book 9',
+                'image' => 'rec-9.jpg',
+                'price' => 400000,
+                'country' => 'Laos',
+                'description' => 'Description for Book 9',
+                'slug' => Str::slug('Book 9'). '-' . uniqid(),
+            ],
+            [
+                'title' => 'Book 10',
+                'image' => 'rec-10.jpg',
+                'price' => 450000,
+                'country' => 'Cambodia',
+                'description' => 'Description for Book 10',
+                'slug' => Str::slug('Book 10'). '-' . uniqid(),
             ]
         ];
 
