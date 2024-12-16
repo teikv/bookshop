@@ -3,21 +3,20 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Hash;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Account>
- */
 class AccountFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [
-            //
+            'username' => fake()->unique()->userName(),
+            'password' => Hash::make('password'), // mật khẩu mặc định
+            'email' => fake()->unique()->safeEmail(),
+            'role' => fake()->randomElement(['admin', 'user']),
+            'name' => fake()->name(),
+            'phone' => fake()->phoneNumber(),
+            'shipping_address' => fake()->address(),
         ];
     }
 }

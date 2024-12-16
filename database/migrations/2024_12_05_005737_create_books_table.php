@@ -9,10 +9,15 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('books', function (Blueprint $table) {
-            $table->id();
+            $table->id('BookID');
+            $table->string('Title');
+            $table->decimal('Price', 8, 2); // max: 999,999.99
+            $table->date('PublicationDate')->nullable();
+            $table->text('Description')->nullable();
+            $table->integer('StockQuantity')->default(0);
             $table->timestamps();
         });
     }

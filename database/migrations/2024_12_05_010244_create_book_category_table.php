@@ -6,20 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('book_category', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('BookID');
+            $table->unsignedBigInteger('CategoryID');
             $table->timestamps();
+
+            // Unique Constraint to avoid duplicate entries
+            $table->unique(['BookID', 'CategoryID']);
+
+            // Foreign Keys
+            $table->foreign('BookID')->references('BookID')->on('books')->onDelete('cascade');
+            $table->foreign('CategoryID')->references('CategoryID')->on('categories')->onDelete('cascade');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('book_category');
