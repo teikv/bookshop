@@ -22,6 +22,7 @@
   </nav>
 </div>
 
+<<<<<<< HEAD
 <!-- Book Details -->
 <div class="container">
   <div class="row">
@@ -30,6 +31,24 @@
       <div class="border p-3">
         <div class="bg-light d-flex align-items-center justify-content-center product-image">
           <span class="text-muted">Hình ảnh</span>
+=======
+      <!-- Details -->
+      <div class="col-lg-7 col-md-6">
+        <h2 class="product-title">Atomic Habits - Thay Đổi Tí Hon Hiệu Quả Bất Ngờ (Tái Bản 2023)</h2>
+        <p class="price">100.000 đ</p>
+        <div class="d-flex align-items-center mb-3">
+          <label for="quantity" class="me-3">Số lượng:</label>
+          <div class="input-group" style="width: 150px;">
+            <button class="btn btn-outline-secondary" type="button">-</button>
+            <input type="text" id="quantity" class="form-control text-center" value="3">
+            <button class="btn btn-outline-secondary" type="button">+</button>
+          </div>
+        </div>
+        <p class="text-muted">Còn lại 50 trong kho</p>
+        <div class="d-flex">
+          <button class="btn btn-outline-secondary me-3">Thêm vào giỏ hàng</button>
+          <button class="btn btn-primary" onclick="window.location.href='{{ url('/payment') }}'">Mua ngay</button>
+>>>>>>> origin/payment
         </div>
       </div>
     </div>

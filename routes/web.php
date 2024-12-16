@@ -11,6 +11,15 @@ Route::get('/booklist', function () {
 Route::get('/bookdetail', function () {
     return view('bookdetail');
 });
+Route::get('/payment', function () {
+    return view('paymentdetail');
+});
+Route::get('/customer', function () {
+    return view('customerdetail');
+});
+Route::get('/success', function () {
+    return view('successdetail');
+});
 
 Route::get('/about', function () {
     return view('about');
