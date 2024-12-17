@@ -16,6 +16,19 @@ class Book extends Model
         'PublicationDate',
         'Description',
         'StockQuantity',
+        'image',
+        'country',
+        'slug'
     ];
+
+    public function authors()
+    {
+        return $this->hasMany(Author::class, 'AuthorID');
+    }
+
+    public function categories()
+    {
+        return $this->hasMany(Category::class, 'CategoryID');
+    }
 }
 

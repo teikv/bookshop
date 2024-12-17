@@ -9,7 +9,18 @@ class CategorySeeder extends Seeder
 {
     public function run()
     {
-        Category::factory()->count(10)->create();
+        $categories = [
+            ['name' => 'Tiểu thuyết'],
+            ['name' => 'Văn học'],
+            ['name' => 'Khoa học'],
+            ['name' => 'Kinh tế'],
+            ['name' => 'Kỹ năng sống'],
+            ['name' => 'Manga - Comic']
+        ];
+
+        foreach ($categories as $category) {
+            Category::create($category);
+        }
     }
 }
 

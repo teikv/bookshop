@@ -12,14 +12,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('accounts', function (Blueprint $table) {
-            $table->id('AccountID');
-            $table->string('Username')->unique();
-            $table->string('Password');
-            $table->string('Email')->unique();
-            $table->string('Role')->default('customer'); // admin, customer, etc.
-            $table->string('Name');
-            $table->string('Phone')->nullable();
-            $table->string('ShippingAddress')->nullable();
+            $table->id('account_id');
+            $table->string('username')->unique();
+            $table->string('password');
+            $table->string('email')->unique();
+            $table->string('role')->default('customer'); // admin, customer, etc.
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->string('shipping_address')->nullable();
             $table->timestamps(); // includes created_at and updated_at
         });
     }

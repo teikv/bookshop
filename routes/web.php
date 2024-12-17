@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 // Định nghĩa với HomeController và đặt tên route
-Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
+Route::get('/', [HomeController::class, 'index'])->name('homepage');
 
 // Các route khác
 Route::get('/booklist', function () {

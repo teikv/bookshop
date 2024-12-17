@@ -10,5 +10,10 @@ class Author extends Model
 
     protected $primaryKey = 'AuthorID';
     protected $fillable = ['AuthorName', 'Biography'];
+
+    public function books()
+    {
+        return $this->hasMany(Book::class, 'AuthorID');
+    }
 }
 
