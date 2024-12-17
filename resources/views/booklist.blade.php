@@ -3,15 +3,8 @@
 @section('title', 'Book List')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    @vite('resources/css/app.css')
-    @stack('styles')
-</head>
-
+    
 <nav>
     <ol class="breadcrumb mt-600">
         <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>

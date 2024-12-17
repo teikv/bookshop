@@ -3,14 +3,7 @@
 @section('title', 'About Us') <!-- Đặt tiêu đề trang -->
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    @vite('resources/css/app.css')
-    @stack('styles')
-</head>
 <!-- Breadcrumb -->
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -58,5 +51,4 @@
     </div>
 </div>
 
-</html>
 @endsection

@@ -35,7 +35,7 @@
     <header class="bg-light py-3">
         
 
-            <livewire:navigation /> 
+            <livewire:navigation/> 
             
             {{-- <!-- Search and Cart -->
             <div class="d-flex align-items-center">
