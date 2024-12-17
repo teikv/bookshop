@@ -10,4 +10,6 @@ class Category extends Model
     use HasFactory;
     
     //
+    protected $primaryKey = 'CategoryID';
+    protected $fillable = ['CategoryName'];
 }

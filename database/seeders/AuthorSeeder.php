@@ -2,16 +2,14 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Author;
 use Illuminate\Database\Seeder;
 
 class AuthorSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
+    public function run()
     {
-        //
+        Author::factory()->count(10)->create();
     }
 }
+

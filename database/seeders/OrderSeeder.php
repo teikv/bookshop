@@ -2,16 +2,18 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Order;
+use App\Models\Account;
 use Illuminate\Database\Seeder;
 
 class OrderSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    public function run(): void
+    public function run()
     {
-        //
+        $accounts = Account::all();
+        foreach ($accounts as $account) {
+            Order::factory()->count(3)->create(['AccountID' => $account->AccountID]);
+        }
     }
 }
+
