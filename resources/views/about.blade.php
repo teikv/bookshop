@@ -23,7 +23,7 @@
 <div class="bg-light mb-4" style="height: 300px;"></div>
 
 <!-- Row 1 -->
-<div class="row mb-4">
+<div class="row-detail row mb-4">
     <div class="col-md-6 d-flex flex-column justify-content-center">
         <h5>Books help children understand quickly, learn faster, and develop critical thinking skills.</h5>
         <p>These books are designed to nurture children's curiosity and expand their problem-solving abilities.</p>
@@ -35,7 +35,7 @@
 </div>
 
 <!-- Row 2 -->
-<div class="row mb-4">
+<div class="row-detail row mb-4">
     <div class="col-md-6">
         <div class="bg-secondary" style="height: 200px;"></div>
     </div>
@@ -47,7 +47,7 @@
 </div>
 
 <!-- Row 3 -->
-<div class="row mb-4">
+<div class="row-detail row mb-4">
     <div class="col-md-6 d-flex flex-column justify-content-center">
         <h5>Books help children understand quickly, learn faster, and develop critical thinking skills.</h5>
         <p>These books are designed to nurture children's curiosity and expand their problem-solving abilities.</p>

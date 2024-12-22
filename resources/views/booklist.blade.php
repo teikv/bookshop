@@ -22,22 +22,28 @@
 <div class="row h-full">
     <!-- Sidebar -->
     <div class="col-md-3 sidebar">
-        <h5>Giá</h5>
-        <ul class="list-unstyled">
-            <li><input type="checkbox"> 0 - 150.000 VND</li>
-            <li><input type="checkbox"> 150.000 - 300.000 VND</li>
-            <li><input type="checkbox"> 300.000 - 500.000 VND</li>
-            <li><input type="checkbox"> 500.000 - 700.000 VND</li>
-            <li><input type="checkbox"> 700.000 VND trở lên</li>
-        </ul>
-        <h5>Country</h5>
-        <ul class="list-unstyled">
-            <li><input type="checkbox"> Vietnam</li>
-            <li><input type="checkbox"> China</li>
-            <li><input type="checkbox"> Japan</li>
-            <li><input type="checkbox"> Korea</li>
-            <li><input type="checkbox"> USA</li>
-        </ul>
+        <div class="condition-container">
+            <h5>Giá</h5>
+            <ul class="list-unstyled">
+                <li><input type="checkbox"> 0 - 150.000 VND</li>
+                <li><input type="checkbox"> 150.000 - 300.000 VND</li>
+                <li><input type="checkbox"> 300.000 - 500.000 VND</li>
+                <li><input type="checkbox"> 500.000 - 700.000 VND</li>
+                <li><input type="checkbox"> 700.000 VND trở lên</li>
+            </ul>
+        </div>
+
+        <div class="condition-container">
+            <h5>Country</h5>
+            <ul class="list-unstyled">
+                <li><input type="checkbox"> Vietnam</li>
+                <li><input type="checkbox"> China</li>
+                <li><input type="checkbox"> Japan</li>
+                <li><input type="checkbox"> Korea</li>
+                <li><input type="checkbox"> USA</li>
+            </ul>
+        </div>
+        
     </div>
 
     <!-- Main Content -->

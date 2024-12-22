@@ -121,8 +121,6 @@
         }
 
         label {
-            flex: 1;
-            text-align: right;
             margin-right: 10px;
             font-weight: bold;
             color: #ff0000;
@@ -395,6 +393,57 @@ button {
     box-sizing: border-box;
 }
 
+
+        
+.sidebar {
+    border-right: 1px solid #ccc;
+
+}
+
+.book-card {
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+}
+.carousel-item {
+    height: 300px; /* Chiều cao của banner */
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.banner-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* Điều chỉnh container */
+.popular-books,
+.new-books {
+    display: flex;
+    overflow: hidden;
+}
+
+/* Điều chỉnh từng card */
+.card {
+    width: 300px;
+    margin: 0 10px;
+    border: none;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
 /* Responsive cho màn hình nhỏ (dưới 768px) */
 @media (max-width: 768px) {
     .success-header h2 {
@@ -441,6 +490,31 @@ button {
 
 /* Responsive cho màn hình rất nhỏ (dưới 480px) */
 @media (max-width: 480px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;  
+        gap: 20px;
+    }
+
+    .price-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .text-muted{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .input-group {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+    }
+    
+
     .success-icon {
         width: 100px;
         height: 100px;
@@ -459,7 +533,7 @@ button {
     }
 
     .pagination {
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
@@ -467,54 +541,52 @@ button {
         width: 100%;
         text-align: center;
     }
+    
+    /* Điều chỉnh container */
+
+    .form-control {
+        width: 380px !important;
+    }
+
+    .popular-books,
+    .new-books {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem; /* Space between grid items */
+        margin-top: 20px;
+    }
+
+    /* Điều chỉnh từng card */
+    .card {
+        width: 150px;
+        margin: 0 10px;
+        border: none;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .form-price {
+        width: 150px !important;
+    }
+
+    .details-section {
+        margin-top: 20px;
+    }
+
+    .row-detail {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 /* end success */
 
-        
-        .sidebar {
-            border-right: 1px solid #ccc;
-        }
+.condition-container {
+    margin-bottom: 10px;
+}
 
-        .book-card {
-            transition: transform 0.2s;
-        }
-
-        .book-card:hover {
-            transform: scale(1.03);
-        }
-        .carousel-item {
-            height: 300px; /* Chiều cao của banner */
-            background-size: cover;
-            background-position: center;
-        }
-
-        .carousel-caption h5 {
-            font-size: 2.5rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-        .banner-item {
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-        }
-
-        /* Điều chỉnh container */
-        .popular-books,
-        .new-books {
-            display: flex;
-            overflow: hidden;
-        }
-
-        /* Điều chỉnh từng card */
-        .card {
-            width: 300px;
-            margin: 0 10px;
-            border: none;
-            background-color: #ffffff;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
+.price-number {
+    width: 150px !important;
+}
