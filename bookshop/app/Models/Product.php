@@ -20,7 +20,10 @@ class Product extends Model
     public const DEFAULT_CURRENCY = 'VNĐ';
 
     public const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1509042239860-f550ce710b93';
-    
+    public function authors()
+    {
+        return $this->belongsToMany(Author::class, 'book_author', 'BookID', 'AuthorID');
+    }
     public function category()
     {
         return $this->belongsTo(Category::class);
