@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
 use Illuminate\Support\Facades\Route;
+use Laravel\Telescope\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home', function () {
-    return view('HomePage');
-});
+Route::get('/', [HomepageController::class, 'index']);
+
