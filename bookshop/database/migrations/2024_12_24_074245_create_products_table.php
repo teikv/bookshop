@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('currency');
             $table->string('display_image_url');
             $table->foreignId('category_id')->nullable();
+            $table->integer('stock');
 
             $table->foreign('category_id')
                     ->references('id')

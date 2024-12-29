@@ -25,6 +25,7 @@ class ProductFactory extends Factory
             'currency' => Product::DEFAULT_CURRENCY,
             'display_image_url' => Product::DEFAULT_IMAGE,
             'category_id' => Category::factory(),
+            'stock' => fake()->numberBetween(1, 100),
         ];
     }
 }

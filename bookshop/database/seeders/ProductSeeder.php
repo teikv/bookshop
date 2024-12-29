@@ -18,6 +18,7 @@ class ProductSeeder extends Seeder
             'description' => 'Tác phẩm kinh điển của Arthur Conan Doyle về thám tử thiên tài và người bạn đồng hành trung thành của ông, bác sĩ Watson.',
             'price' => 150000,
             'display_image_url' => 'https://file.hstatic.net/200000090875/file/sher1_5844446110bb45cba8cfb086e3066ed3_grande.jpg',
+            'stock' => 10,
         ],
         [
             'id' => 2,
@@ -26,6 +27,7 @@ class ProductSeeder extends Seeder
             'description' => 'Câu chuyện thám tử nổi tiếng của Agatha Christie về một vụ án mạng trên chuyến tàu sang trọng.',
             'price' => 180000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/c/c0/Murder_on_the_Orient_Express_First_Edition_Cover_1934.jpg',
+            'stock' => 8,
         ],
         [
             'id' => 3,
@@ -34,6 +36,7 @@ class ProductSeeder extends Seeder
             'description' => 'Tiểu thuyết tội phạm của Stieg Larsson, theo chân một nhà báo và một hacker khi họ điều tra một vụ án bí ẩn.',
             'price' => 200000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/5/50/The_Girl_On_The_Train_%28US_cover_2015%29.png',
+            'stock' => 5,
         ],
         [
             'id' => 4,
@@ -42,6 +45,7 @@ class ProductSeeder extends Seeder
             'description' => 'Câu chuyện thám hiểm tâm lý của Gillian Flynn về một vụ mất tích bí ẩn.',
             'price' => 190000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/7/7e/Gone_Girl_%28Flynn_novel%29.jpg',
+            'stock' => 3,
         ],
         [
             'id' => 5,
@@ -50,6 +54,7 @@ class ProductSeeder extends Seeder
             'description' => 'Cuốn tiểu thuyết nổi tiếng của Dan Brown về một bí mật tôn giáo được mã hóa.',
             'price' => 220000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/6/6b/DaVinciCode.jpg',
+            'stock' => 15,
         ],
         [
             'id' => 6,
@@ -58,6 +63,7 @@ class ProductSeeder extends Seeder
             'description' => 'Một tiểu thuyết hồi hộp đầy bí ẩn của Alex Michaelides về một bệnh nhân không nói.',
             'price' => 210000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/d/df/The_Silent_Patient_early_2019_UK_edition.png',
+            'stock'=> 16,
         ],
         [
             'id' => 7,
@@ -66,6 +72,7 @@ class ProductSeeder extends Seeder
             'description' => 'Cuốn tiểu thuyết kinh điển của Jane Austen về tình yêu và những định kiến xã hội.',
             'price' => 170000,
             'display_image_url' => 'https://images.penguinrandomhouse.com/cover/9780593622452',
+            'stock'=> 0,
         ],
         [
             'id' => 8,
@@ -74,6 +81,7 @@ class ProductSeeder extends Seeder
             'description' => 'Một câu chuyện tình cảm lãng mạn đầy cảm xúc của Nicholas Sparks.',
             'price' => 180000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/d/d9/The_Notebook_Cover.jpg',
+            'stock'=> 40,
         ],
         [
             'id' => 9,
@@ -82,6 +90,7 @@ class ProductSeeder extends Seeder
             'description' => 'Tiểu thuyết của Jojo Moyes về một câu chuyện tình yêu sâu sắc và đầy xúc cảm.',
             'price' => 190000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/e/e0/Me_Before_You.jpg',
+            'stock' => 8,
         ],
         [
             'id' => 10,
@@ -90,6 +99,7 @@ class ProductSeeder extends Seeder
             'description' => 'Một câu chuyện tình cảm của John Green về tình yêu, mất mát và hy vọng.',
             'price' => 200000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/a/a9/The_Fault_in_Our_Stars.jpg',
+            'stock' => 8,
         ],
         [
             'id' => 11,
@@ -98,6 +108,7 @@ class ProductSeeder extends Seeder
             'description' => 'Một câu chuyện tình yêu đầy xúc động của Nicholas Sparks.',
             'price' => 180000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/a/a8/A_Walk_to_Remember_%28Hardcover%29.jpg',
+            'stock' => 8,
         ],
         [
             'id' => 12,
@@ -106,6 +117,7 @@ class ProductSeeder extends Seeder
             'description' => 'Câu chuyện tình yêu kinh điển của Erich Segal về hai người trẻ và hành trình yêu thương.',
             'price' => 190000,
             'display_image_url' => 'https://upload.wikimedia.org/wikipedia/en/d/d1/Love_Story_%28Erich_Segal_novel%29_cover.jpg',
+            'stock' => 8,
         ],
     ];
     

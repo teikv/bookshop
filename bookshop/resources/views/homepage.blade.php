@@ -139,7 +139,6 @@
                 </div>
             </div>
         </section>
-
         <!-- collection books -->
         <section class="s-four flex flex-col bg-gray-100 pb-8">
             <div class="slider-list shadow-md border rounded-xl">
@@ -361,13 +360,4 @@
             setInterval(nextSlide, intervalTime);
         });
     </script>
-    <script>
-        document.getElementById('scrollToAuthors').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('authors').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
 </x-layout>

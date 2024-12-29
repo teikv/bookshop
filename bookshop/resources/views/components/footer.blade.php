@@ -4,7 +4,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-4">
                         <!-- Logo -->
                         <div class="flex flex-col items-center justify-center text-center md:items-center">
-                            <img srcset="./resource/logo2.jpg" loading="lazy" alt="Logo" class="h-16 mb-2">
+                            <img srcset="{{ asset('resource/logo2.jpg') }}" loading="lazy" alt="Logo" class="h-16 mb-2">
                             <p>Your gateway to a world of books. Discover, Read, and Grow with EchoLibrary.</p>
                         </div>
 
