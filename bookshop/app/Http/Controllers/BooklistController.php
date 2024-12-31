@@ -11,10 +11,13 @@ class BooklistController extends Controller
     public $products;
     public $categories;
 
+    public $maxPrice;
+
     public function __construct()
     {
         $this->products = Product::all();
         $this->categories = Category::all();
+        $this->maxPrice = Product::max('price');
     }
 
     public function filterByCategory($id)
@@ -25,6 +28,7 @@ class BooklistController extends Controller
         return view('booklist', [
             'categories' => $categories,
             'products' => $products,
+            'maxPrice' => $this->maxPrice,
         ]);
     }
 
@@ -46,7 +50,7 @@ class BooklistController extends Controller
         return view('booklist', [
             'products' => $this->products,
             'categories' => $this->categories,
-            'maxPrice' => $maxPrice,
+            'maxPrice' => $this->$maxPrice,
         ]);
     }
 }
