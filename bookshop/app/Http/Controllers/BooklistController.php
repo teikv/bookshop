@@ -11,24 +11,23 @@ class BooklistController extends Controller
     public $products;
     public $categories;
 
-    public $maxPrice;
 
     public function __construct()
     {
         $this->products = Product::all();
         $this->categories = Category::all();
-        $this->maxPrice = Product::max('price');
     }
 
     public function filterByCategory($id)
     {
         $categories = Category::all(); // Để hiển thị sidebar
         $products = Product::where('category_id', $id)->get(); // Lấy các sản phẩm thuộc danh mục
+        $maxPrice = Product::max('price');
 
         return view('booklist', [
             'categories' => $categories,
             'products' => $products,
-            'maxPrice' => $this->maxPrice,
+            'maxPrice' => $maxPrice,
         ]);
     }
 
@@ -50,7 +49,7 @@ class BooklistController extends Controller
         return view('booklist', [
             'products' => $this->products,
             'categories' => $this->categories,
-            'maxPrice' => $this->$maxPrice,
+            'maxPrice' => $maxPrice,
         ]);
     }
 }
