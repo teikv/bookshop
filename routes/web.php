@@ -30,3 +30,5 @@ Route::get('/customer', function () {
 Route::get('/success', function () {
     return view('successdetail');
 });
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard'); 
