@@ -106,3 +106,25 @@ var TrendingSlider = new Swiper('.trending-slider', {
    }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+   const userName = document.getElementById("user-name");
+   const userModal = document.getElementById("user-modal");
+   const closeModal = document.getElementById("close-modal");
+
+   // Hiển thị modal khi nhấp vào tên người dùng
+   userName.addEventListener("click", function () {
+       userModal.classList.remove("hidden");
+   });
+
+   // Ẩn modal khi nhấp vào nút "Close"
+   closeModal.addEventListener("click", function () {
+       userModal.classList.add("hidden");
+   });
+
+   // Ẩn modal khi nhấp bên ngoài modal
+   window.addEventListener("click", function (event) {
+       if (event.target === userModal) {
+           userModal.classList.add("hidden");
+       }
+   });
+});
