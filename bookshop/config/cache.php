@@ -32,7 +32,10 @@ return [
     */
 
     'stores' => [
-
+        'redis' => [
+            'driver' => 'redis',
+            'connection' => 'default',
+        ],
         'apc' => [
             'driver' => 'apc',
         ],
@@ -92,7 +95,10 @@ return [
         'octane' => [
             'driver' => 'octane',
         ],
-
+        'ttl' => [
+            'product_cache' => 600,
+            'category_cache' => 3600,
+        ],
     ],
 
     /*

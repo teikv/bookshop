@@ -91,15 +91,7 @@
       }
     </script>
 
-    <!-- Content -->
-    <!-- Breadcrumb -->
-    <div class="container mx-auto px-4 py-4 pt-28 container-limited">
-      <nav class="text-gray-600 text-xl">
-        <a href="{{ route('home') }}" class="hover:underline">Home</a>
-        <span class="mx-2">></span>
-        <span class="text-green-400 font-semibold">Books</span>
-      </nav>
-    </div>
+  
 
 
 
@@ -195,6 +187,7 @@
                 <img class="w-full h-40 object-contain" src="{{$product->display_image_url}}" alt="{{$product->name}}">
                 <div class="flex flex-col items-center py-5 space-y-2">
                   <h3 class="font-semibold text-center">{{$product->name}}</h3>
+                  <h3> {{$product->category->name}}</h3>
                 </div>
               </div>
               <div>

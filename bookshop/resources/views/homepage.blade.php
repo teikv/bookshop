@@ -88,7 +88,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <section class="s-three pb-8 flex flex-col items-center bg-gray-100">
             <div class="container-content mx-auto bg-white shadow-md border rounded-xl">
@@ -105,8 +105,8 @@
                             <div class="swiper-wrapper flex">
                                 <!-- Slide-start -->
 
-                                @foreach ($products as $product)
-                                <div class="swiper-slide trending-slide flex flex-col items-center">
+                                <!-- @foreach ($products as $product)
+                                <div class="swiper-slide trending-slide flex flex-col items-center" loading="lazy">
                                     <div class="trending-slide-img mb-4">
                                         <img src="{{ $product->display_image_url }}" alt="Book">
                                     </div>
@@ -130,7 +130,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
+                                @endforeach -->
                             </div>
                             <div class="trending-slider-control p-3">
                                 <div class="swiper-pagination "></div>
@@ -151,7 +151,7 @@
                         @foreach ($products as $product)
                         <div class="photo-item">
                             <div class="photo-content">
-                                <img src="{{ $product->display_image_url }}" alt="{{ $product->name }}">
+                                <img src="{{ $product->display_image_url }}" loading="lazy" alt="{{ $product->name }}">
                                 <div class="photo-description text-center">
                                     <div>{{ $product->name }}</div>
                                 </div>
@@ -159,6 +159,11 @@
                         </div>
                         @endforeach
                     </div>
+                </div>
+
+                <!-- Pagination Controls -->
+                <div class="pagination mt-4 text-center">
+                    {{ $products->links() }} <!-- Hiển thị các liên kết phân trang -->
                 </div>
             </div>
         </section>
