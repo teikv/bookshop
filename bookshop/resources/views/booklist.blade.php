@@ -196,6 +196,9 @@
                 <div class="flex flex-col items-center py-5 space-y-2">
                   <h3 class="font-semibold text-center">{{$product->name}}</h3>
                 </div>
+                <div class="flex flex-col items-center py-5 space-y-2">
+                  <h3 class="font-semibold text-center">{{$product->category->name}}</h3>
+                </div>
               </div>
               <div>
                 <p class="font-medium text-center">{{$product->formatted_price}}</p>

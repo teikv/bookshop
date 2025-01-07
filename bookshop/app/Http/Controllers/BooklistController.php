@@ -45,6 +45,7 @@ class BooklistController extends Controller
 }
     public function index()
     {
+        
         $maxPrice = Product::max('price');
         return view('booklist', [
             'products' => $this->products,
