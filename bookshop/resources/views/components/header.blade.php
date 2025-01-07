@@ -56,10 +56,6 @@
             </div>
 
 
-            <button @click="open = true" class="text-gray-700 hover:text-green-400 h-14 w-14 text-3xl">
-                <i class="fa-solid fa-circle-user text-gray-700"></i>
-            </button>
-            
         </div>
         </div>
         <button id="hamburgerBtn" class="md:hidden focus:outline-none">
