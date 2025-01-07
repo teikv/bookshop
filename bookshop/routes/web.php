@@ -8,6 +8,8 @@ use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Telescope\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\NewPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,8 @@ Route::middleware(['throttle:60,1', 'rate.limit'])->group(function () {
     Route::get('/detail/{id}', [DetailController::class, 'show']); // Chi tiết sách
     Route::get('/booklist/categories/{id}', [BooklistController::class, 'filterByCategory'])->name('categories.filter'); // Lọc sách theo thể loại
     Route::get('/about', [AboutController::class, 'index']); // Trang giới thiệu
+    Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
+    Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');  
 });
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');

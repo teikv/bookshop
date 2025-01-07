@@ -10,6 +10,8 @@
                 style="text-decoration: none;">Books</a>
             <a href="{{ url(path: '/about')}}" class="text-gray-700 hover:text-green-400 no-underline"
                 style="text-decoration: none;">About Us</a>
+            <a href="{{ url(path: '/contact')}}" class="text-gray-700 hover:text-green-400 no-underline"
+                style="text-decoration: none;">Contact</a>
         </div>
         <div class="flex items-center space-x-4" x-data="{ open: false }">
             <div class="box-search relative">
@@ -31,27 +33,37 @@
 
             <div>
                 @auth
-                    <b id="user-name" class="cursor-pointer text-blue-500 hover:underline">{{ auth()->user()->name }}</b>
+                    <b id="user-name" class="cursor-pointer text-gray-700 hover:text-green-400 ">{{ auth()->user()->name }}</b>
                     <!-- Modal -->
                     <div id="user-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50">
                         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg w-1/3">
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">
-                                <b>{{ auth()->user()->name }}</b>
+                            <!-- User Info -->
+                            <p class="mb-4 text-lg font-semibold text-gray-700 dark:text-gray-300 text-center">
+                                {{ __('Hello,') }} <b>{{ auth()->user()->name }}</b>
                             </p>
-                            <form action="{{ route('logout') }}" method="POST">
+
+                            <!-- Logout Form -->
+                            <form action="{{ route('logout') }}" method="POST" class="text-center">
                                 @csrf
                                 <button type="submit"
-                                    class="">
+                                    class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200 w-full">
                                     {{ __('Logout') }}
                                 </button>
                             </form>
-                            <button id="close-modal" class="mt-4 bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded w-full">
+
+                            <!-- Close Button -->
+                            <button id="close-modal" class="mt-4 bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-6 rounded-lg transition duration-200 w-full">
                                 {{ __('Close') }}
                             </button>
                         </div>
                     </div>
+
                 @else
-                    <a href="{{ route('login') }}" class="text-blue-500 hover:underline">Login</a>
+                <a href="{{ route('login') }}" 
+                class="inline-block px-6 py-2.5 bg-black text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-green-400 focus:bg-gray-900 active:bg-gray-700 transition duration-150 ease-in-out"
+                style="text-decoration: none;">
+                Login
+                </a>
                 @endauth
             </div>
 

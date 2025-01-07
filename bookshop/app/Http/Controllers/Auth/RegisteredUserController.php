@@ -43,8 +43,6 @@ class RegisteredUserController extends Controller
         ]);
 
         event(new Registered($user));
-
-        SendEmailVerification::dispatch($user);
  
         Auth::login($user);
 
