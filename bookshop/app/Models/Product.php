@@ -35,4 +35,10 @@ class Product extends Model
     {
         return number_format($this->price * $quantity) . ' ' . $this->currency;
     }
+
+    public function getFormattedPriceFormatted($quantity = 1)
+    {
+        return number_format($this->price * $quantity) . ' ' . $this->currency;
+    }
+
 }

@@ -73,7 +73,7 @@ return [
     |
     */
 
-    'home' => '/dashboard',
+    'home' => '/dashboard', // Sai route sau khi login thanh cong
 
     /*
     |--------------------------------------------------------------------------
