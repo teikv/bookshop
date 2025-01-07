@@ -10,6 +10,8 @@
                 style="text-decoration: none;">Books</a>
             <a href="{{ url(path: '/about')}}" class="text-gray-700 hover:text-green-400 no-underline"
                 style="text-decoration: none;">About Us</a>
+            <a href="{{ url(path: '/contact')}}" class="text-gray-700 hover:text-green-400 no-underline"
+                style="text-decoration: none;">Contact</a>
         </div>
         <div class="flex items-center space-x-4" x-data="{ open: false }">
             <div class="box-search relative">

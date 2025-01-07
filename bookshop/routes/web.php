@@ -8,7 +8,7 @@ use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Telescope\Http\Controllers\HomeController;
-
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Auth\NewPasswordController;
 
 /*
@@ -29,6 +29,8 @@ Route::get('/booklist/categories/{id}', [BooklistController::class, 'filterByCat
 Route::get('/about', [AboutController::class,'index']);
 Route::get('booklist/search', [BooklistController::class, 'search'])->name('search');
 Route::get('/dashboard', [App\Http\Controllers\HomepageController::class, 'index']);
-
+//contact
+Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
+Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact.submit');
 
 
