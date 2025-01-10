@@ -78,12 +78,6 @@ php artisan serve
 #### 7. Access the Application
 Visit the application at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-## Detail of the project
-
-1. [wireframe](./wireframe/README.md)
-2. [screenshot](./screenshot/README.md)
-3. [database schema](./database-schema/README.md)
-
 ## Contributors
 
 1. JunCuong - Trần Xuân Cường - 22040004
