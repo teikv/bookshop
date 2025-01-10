@@ -29,7 +29,7 @@ Follow these steps to set up and run the application locally.
 #### 1. Clone the Repository
 ```bash
 git clone https://github.com/teikv/bookshop.git
-cd LRV_Web_Dev/backend
+cd /bookshop
 ```
 
 #### 2. Configure the Environment
