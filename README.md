@@ -4,29 +4,79 @@
 
 Welcome to the **EchoLibrary** is an innovative project that aims to build an online platform for buying and selling books. With the mission of providing a convenient, rich and reliable book shopping experience, EchoLibrary will be the ideal destination for book lovers.
 
-# Technology Used
+## Makeup Service
 
--   **Blade Templates**: For rendering dynamic and reusable HTML views.
--   **Eloquent ORM**: Simplifies database interactions using an intuitive and expressive syntax.
--   **MySQL Database**: A reliable and scalable relational database system.
--   **Redis Cache**: Enhances performance by caching frequently accessed data for faster retrieval.
--   **Environment Variables (dotenv)**: Ensures secure and configurable application settings.
--   **Tailwind CSS**: A utility-first framework for styling with speed and flexibility.
--   **Livewire**: Enables seamless interaction between the frontend and backend without writing JavaScript.
--   **PHPStan**: For static analysis to maintain high-quality, error-free code.
--   **Laravel Mix/Vite**: For compiling and optimizing frontend assets with modern build tools.
--   **Sanctum & Fortify**: Provides robust authentication for APIs and web-based login systems.
--   **Scramble**: Enhances database security by obfuscating sensitive data.
--   **Telescope**: Offers powerful debugging and monitoring tools for real-time application insights.
--   **Laravel Pulse**: Tracks and visualizes key application metrics for better performance management.
--   **Job Queues**: Handles time-consuming tasks asynchronously to improve application responsiveness.
--   **Slack Integration**: Facilitates real-time communication and alerts for application events.
--   **Vite**: Compiles and optimizes frontend assets for production environments.
--   **Middleware**: For security, data validation, and performance optimizations.
--   **Compression**: Reduces response size for faster page loads.
--   **Monolog**: Integrated logging system for debugging and error tracking.
--   **Laravel Debugbar**: A developer tool to debug and profile the application during development.
--   **Testing Suite**: PHPUnit and Laravel's testing features for ensuring application reliability.
+### Technologies Used
+
+#### Backend:
+- **Laravel**: A PHP framework for web application development.
+- **Eloquent ORM**: Database abstraction for handling database operations.
+- **Sanctum**: Lightweight authentication for SPA and APIs.
+- **Telescope**: Debugging and monitoring tools for Laravel applications.
+- **Sentry**: Error tracking and performance monitoring.
+- **MySQL**: Relational database for persistent data storage.
+
+#### Frontend:
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Bootstrap**: Frontend toolkit for responsive designs.
+- **Vite**: Frontend build tool for bundling and faster development.
+- **JavaScript/ES6**: For interactivity and client-side functionality.
+
+### Setup Instructions
+
+Follow these steps to set up and run the application locally.
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/teikv/bookshop.git
+cd LRV_Web_Dev/backend
+```
+
+#### 2. Configure the Environment
+Create the `.env` file by copying the example:
+
+```bash
+cp .env.example .env
+```
+
+Update database credentials in the `.env` file:
+- Set the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` values.
+- If using MySQL Workbench, replace the password with your MySQL credentials.
+- If using XAMPP, leave the password empty.
+
+#### 3. Install Dependencies
+Run the following commands to install PHP and Node.js dependencies:
+
+```bash
+composer install
+npm install
+```
+
+#### 4. Start Apache and MySQL (XAMPP)
+Open XAMPP and click "Start" for Apache and MySQL.
+
+#### 5. Migrate and Seed the Database
+Run database migrations and seeders:
+
+```bash
+php artisan migrate --seed
+```
+
+#### 6. Start Development Servers
+Open one terminal for the frontend:
+
+```bash
+npm run dev
+```
+
+Open another terminal for the backend:
+
+```bash
+php artisan serve
+```
+
+#### 7. Access the Application
+Visit the application at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## Detail of the project
 
@@ -44,3 +94,5 @@ Welcome to the **EchoLibrary** is an innovative project that aims to build an on
 ## Contact
 
 - Email: cuong.tran220404@vnuk.edu.vn
+
+
