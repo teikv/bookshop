@@ -237,7 +237,7 @@
       <!-- Breadcrumb -->
       <div class="container mx-auto px-4 py-4 pt-28 container-limited">
         <nav class="text-gray-600 text-xl">
-          <a href="{{ route('home') }}" class="hover:underline">Home</a>
+          <a href="{{ route('homepage') }}" class="hover:underline">Home</a>
           <span class="mx-2">></span>
           <a href="{{ route('booklist') }}" class="hover:underline">Books</a>
           <span class="mx-2">></span>
